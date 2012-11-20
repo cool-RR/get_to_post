@@ -1,5 +1,5 @@
 import django.views.generic
-from python_toolbox.nifty_collections import OrderedDict
+from collections import OrderedDict
 
 
 class GetToPostView(django.views.generic.TemplateView):
