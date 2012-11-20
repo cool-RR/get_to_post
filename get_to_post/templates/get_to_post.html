@@ -1,6 +1,14 @@
-<form action='{{ post_url }}' method='post'>
-  {% for key, value in form_data.items %}
+<form action='{{ post_url }}' method='post' id='form'>
+  {% for key, value in post_data.items %}
   <input type='hidden' name='{{ key }}' value='{{ value }}' />
   {% endfor %}
   <input type='submit' />
 </form>
+
+<script type='text/javascript'>
+function submit_form() {
+  var form = document.getElementById('form');
+  form.submit();
+}
+window.onload = submit_form;
+</script>

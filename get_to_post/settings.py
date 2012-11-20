@@ -1,5 +1,9 @@
 # Django settings for get_to_post project.
 
+import os
+
+current_directory = os.path.dirname(__file__)
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -106,9 +110,11 @@ ROOT_URLCONF = 'get_to_post.urls'
 WSGI_APPLICATION = 'get_to_post.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Put strings here, like "/home/html/django_templates" or
+    # "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(current_directory, 'templates')
 )
 
 INSTALLED_APPS = (
