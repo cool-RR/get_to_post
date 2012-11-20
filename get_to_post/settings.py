@@ -1,8 +1,7 @@
 # Django settings for get_to_post project.
 
 DEBUG = True
-#TEMPLATE_DEBUG = DEBUG
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     ('Ram Rachum', 'ram@rachum.com')
