@@ -18,13 +18,3 @@ proj.directory-list = [{'dirloc': loc('../../..'),
 proj.file-type = 'shared'
 proj.home-dir = loc('../../..')
 proj.main-file = loc('../../../manage.py')
-proj.shared-attribute-names = ['proj.shared-attribute-names',
-                               'proj.directory-list',
-                               'proj.file-list',
-                               'proj.file-type',
-                               'proj.main-file',
-                               'testing.test-file-list',
-                               'testing.auto-test-file-specs',
-                               'testing.test-framework',
-                               'proj.home-dir',
-                               'proj.pypath']
